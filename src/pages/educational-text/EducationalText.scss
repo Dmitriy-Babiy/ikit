@@ -1,20 +1,26 @@
 .educational-text {
   overflow: auto;
   margin: 0 auto;
-  width: 900px;
+  max-width: 900px;
   max-height: 90vh;
   padding: 40px;
   position: relative;
-
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
-
   opacity: 0;
   animation: ani 2s forwards;
 
   &__img {
     display: flex;
+  }
+
+  &__img img:first-child {
+    width: 60%;
+  }
+
+  &__img img:last-child {
+    width: 40%;
   }
 
   p+p {
@@ -72,5 +78,37 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .educational-text {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .educational-text {
+
+    &__img img:first-child {
+      width: 100%;
+    }
+
+    &__img img:last-child {
+      width: 100%;
+    }
+
+    &__img {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .educational-text {
+    padding: 5px;
   }
 }

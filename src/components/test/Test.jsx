@@ -8,7 +8,7 @@ export default function Test({ questions, step, question, onClickVariant, isShow
       <div className="progress">
         <div style={{ width: `${percentage}%` }} className="progress__inner"></div>
       </div>
-      <div test__question>
+      <div className="test__question">
         <h1>{question.title}</h1>
         <ul>
           {question.variants.map((text, index) => (
