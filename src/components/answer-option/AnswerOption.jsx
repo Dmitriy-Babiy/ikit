@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AnswerOption.scss";
 export default function AnswerOption({ text, index, onClickVariant, mt = 0 }) {
   return (

@@ -30,8 +30,8 @@ export default function EducationalText({ ChangeIsTestShow }) {
       <h2>Запоминаем фигуры и обозначения</h2>
 
       <div className="educational-text__img">
-        <img height={500} src="/img/playing-board.png" alt="" />
-        <img height={500} src="/img/figures.jpg" alt="" />
+        <img height={500} src="./ikit/img/playing-board.png" alt="img" />
+        <img height={500} src="./ikit/img/figures.jpg" alt="img" />
       </div>
 
       <div className="educational-text__figures">
