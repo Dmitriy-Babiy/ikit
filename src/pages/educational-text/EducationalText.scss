@@ -1,0 +1,76 @@
+.educational-text {
+  overflow: auto;
+  margin: 0 auto;
+  width: 900px;
+  max-height: 90vh;
+  padding: 40px;
+  position: relative;
+
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  opacity: 0;
+  animation: ani 2s forwards;
+
+  &__img {
+    display: flex;
+  }
+
+  p+p {
+    padding-top: 10px;
+  }
+
+  ul+p {
+    padding-top: 10px;
+  }
+
+  p+ul {
+    padding-top: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    border: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #94cce298;
+    border-radius: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    top: 6.5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #94cce298;
+  }
+
+  li:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
