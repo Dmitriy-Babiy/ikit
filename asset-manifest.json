@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ikit/static/css/main.ab7ade35.css",
+    "main.js": "/ikit/static/js/main.7ad0af1a.js",
+    "index.html": "/ikit/index.html",
+    "main.ab7ade35.css.map": "/ikit/static/css/main.ab7ade35.css.map",
+    "main.7ad0af1a.js.map": "/ikit/static/js/main.7ad0af1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab7ade35.css",
+    "static/js/main.7ad0af1a.js"
+  ]
+}
