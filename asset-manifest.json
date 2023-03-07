@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ikit/static/css/main.e2b5181a.css",
+    "main.css": "/ikit/static/css/main.95385c83.css",
     "main.js": "/ikit/static/js/main.8f844a6f.js",
     "index.html": "/ikit/index.html",
-    "main.e2b5181a.css.map": "/ikit/static/css/main.e2b5181a.css.map",
+    "main.95385c83.css.map": "/ikit/static/css/main.95385c83.css.map",
     "main.8f844a6f.js.map": "/ikit/static/js/main.8f844a6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2b5181a.css",
+    "static/css/main.95385c83.css",
     "static/js/main.8f844a6f.js"
   ]
 }
