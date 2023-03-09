@@ -13,9 +13,7 @@ export default function App() {
   return (
     <div>
       {isTestShow ? (
-        <div>
-          <ControlTest ChangeIsTestShow={ChangeIsTestShow} />
-        </div>
+        <ControlTest ChangeIsTestShow={ChangeIsTestShow} />
       ) : (
         <EducationalText ChangeIsTestShow={ChangeIsTestShow} />
       )}

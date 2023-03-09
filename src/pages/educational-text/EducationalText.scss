@@ -16,11 +16,11 @@
   }
 
   &__img img:first-child {
-    width: 60%;
+    width: 55%;
   }
 
   &__img img:last-child {
-    width: 40%;
+    width: 45%;
   }
 
   p+p {
@@ -81,10 +81,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .educational-text {
-    max-width: 100vw;
-    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100dvh;
     padding: 20px;
   }
 }

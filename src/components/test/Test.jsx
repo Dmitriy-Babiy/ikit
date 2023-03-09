@@ -8,8 +8,11 @@ export default function Test({ questions, step, question, onClickVariant, isShow
       <div className="progress">
         <div style={{ width: `${percentage}%` }} className="progress__inner"></div>
       </div>
+      <div className="test__img">{question.img ? <img src={question.img} alt="" /> : ""}</div>
+      <div className="test__title">
+        <h2>{question.title}</h2>
+      </div>
       <div className="test__question">
-        <h1>{question.title}</h1>
         <ul>
           {question.variants.map((text, index) => (
             <AnswerOption
@@ -27,7 +30,7 @@ export default function Test({ questions, step, question, onClickVariant, isShow
           <hr />
           <div className="test__helper">
             <span>Подсказка:</span>
-            {questions[step].title}
+            {question.helper}
           </div>
         </div>
       ) : (
