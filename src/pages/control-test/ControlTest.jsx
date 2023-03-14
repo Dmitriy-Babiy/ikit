@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Test from "../../components/test/Test";
 import Result from "../../components/result/Result";
-import { questions } from "../../mocks/questions";
 
 import "./ControlTest.scss";
 
-export default function ControlTest({ ChangeIsTestShow }) {
+export default function ControlTest({ ChangeIsTestShow, questions }) {
   const [step, setStep] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [isShowHelper, setIsShowHelper] = useState(false);
-  
+
   const question = questions[step];
 
   const onClickVariant = (correct) => {
